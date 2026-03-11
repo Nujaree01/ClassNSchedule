@@ -66,8 +66,8 @@ export default function LoginScreen() {
           {/* Register extras */}
           {mode === 'register' && (
             <>
-              <Input label="ชื่อ-นามสกุล" value={name} onChangeText={setName} placeholder="เช่น นางสาวนุจรี รอดอินทร์" required />
-              <Input label="รหัสนักศึกษา" value={studentId} onChangeText={setStudentId} placeholder="เช่น 66122250057" keyboardType="numeric" />
+              <Input label="ชื่อ-นามสกุล" value={name} onChangeText={setName} placeholder="" required />
+              <Input label="รหัสนักศึกษา" value={studentId} onChangeText={setStudentId} placeholder="" keyboardType="numeric" />
             </>
           )}
 
