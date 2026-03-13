@@ -52,11 +52,8 @@ export function Input({ label, value, onChangeText, placeholder, secureTextEntry
         onFocus={() => setFocused(true)}
         onBlur={() => setFocused(false)}
         // ── Thai fix ──────────────────────────────────────────
-        autoCorrect={false}           // ปิด autocorrect ที่ทำให้ตัวอักษรไทยหาย
-        autoCapitalize="none"         // ปิด auto capitalize
-        spellCheck={false}            // ปิด spell check
-        textContentType="none"        // ปิด iOS content type detection
-        importantForAutofill="no"     // ปิด Android autofill ที่แทรกแซง input
+        autoCorrect={true}
+        autoCapitalize="none"
         // ─────────────────────────────────────────────────────
         style={[{
           borderWidth: 1.5,
